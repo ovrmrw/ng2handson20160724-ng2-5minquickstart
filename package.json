@@ -4,10 +4,10 @@
   "description": "Angular2ハンズオン(2016年7月24日)向けの公式\"5 min quickstart\"ちょいアレンジ版",
   "main": "index.js",
   "scripts": {
-    "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
-    "lite": "lite-server --config config/browsersync.json",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
+    "start": "npm run tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
+    "lite": "lite-server --config config/browsersync.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -35,7 +35,6 @@
   },
   "devDependencies": {
     "@types/core-js": "^0.9.28",
-    "@types/jasmine": "^2.2.29",
     "@types/node": "^4.0.29",
     "concurrently": "^2.2.0",
     "lite-server": "^2.2.2",

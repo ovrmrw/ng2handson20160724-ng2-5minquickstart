@@ -7,6 +7,7 @@ System.config({
     '@angular': 'node_modules/@angular',
     'rxjs': 'node_modules/rxjs',
     'symbol-observable': 'node_modules/symbol-observable',
+    'rxjs/Rx': 'node_modules/rxjs/bundles/Rx.umd', // (このチュートリアルでは使われないが定義しておくと便利)
   },
   packages: {
     'app': { main: 'main' }, // defaultJSExtensionsをtrueにしていない場合は、{ main: 'main.js' }と書く必要がある。 
@@ -23,5 +24,6 @@ System.config({
 /*
   上記の設定により、
   System.import('app') は .dest/main.js を参照することになる。
-  import {...} from '@angular/core' は node_modules/@angular/core/bundles/core.umd.js を参照することになる。 
+  import {...} from '@angular/core' は node_modules/@angular/core/bundles/core.umd.js を参照することになる。
+  import {...} from 'rxjs/Rx' は node_modules/rxjs/bundles/Rx.umd.js を参照することになる。
 */
