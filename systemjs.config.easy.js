@@ -3,7 +3,7 @@ System.config({
   defaultJSExtensions: true, // 拡張子.jsをdefaultとする。
   transpiler: false,
   map: {
-    'app': '.dest',
+    'app': '.dest', // System.import('app') と書いたら.destフォルダを参照する。
     '@angular': 'node_modules/@angular',
     'rxjs': 'node_modules/rxjs',
     'symbol-observable': 'node_modules/symbol-observable',
@@ -19,3 +19,9 @@ System.config({
     'symbol-observable': { main: 'index' },
   }
 });
+
+/*
+  上記の設定により、
+  System.import('app') は .dest/main.js を参照することになる。
+  import {...} from '@angular/core' は node_modules/@angular/core/bundles/core.umd.js を参照することになる。 
+*/
