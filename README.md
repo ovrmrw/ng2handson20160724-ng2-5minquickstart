@@ -26,3 +26,4 @@ $ npm start
 - typingsを使う代わりに@typesリポジトリを使うようにした。
 - lite-serverの起動時に`config/browsersync.json`を読み込むようにした。
 - minifyされたumdファイルを読み込むための`systemjs.config.easy.min.js`を書いた。(`index.html`の`<script src="systemjs.config.easy.js"></script>`を変更する)
+- async/awaitを有効にするためのファイルを`forAsyncAwait`フォルダに作成した。
