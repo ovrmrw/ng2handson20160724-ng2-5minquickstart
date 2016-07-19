@@ -25,4 +25,12 @@ $ npm start
 - `tsc`の出力結果を`.dest`フォルダに分離して尚且つ`.dest`は`.gitignore`に追加した。
 - lite-serverの起動時に`config/browsersync.json`を読み込むようにした。
 - minifyされたumdファイルを読み込むための`systemjs.config.easy.min.js`を書いた。(`index.html`の`<script src="systemjs.config.easy.js"></script>`を変更する)
-- async/awaitを有効にするためのファイルを`forAsyncAwait`フォルダに作成した。
+- async/awaitを有効にするための`tsconfig.json`を`forAsyncAwait`フォルダに作成した。
+
+---
+
+### Run with async/await
+まず`forAsyncAwait/tsconfig.json`をルートにコピーしてそれから
+```
+$ npm run asyncawait
+```
