@@ -22,6 +22,6 @@ $ npm start
 
 - `systemjs.config.js`は初めて見る人は面食らうと思うので`systemjs.config.easy.js`を別に書いた。
 - typescriptのバージョンを2.0にした。
-- `tsc`で細かいエラーを出さないようにするため`tsconfig.json`に`"skipLibCheck": true`を追加した。
 - `tsc`の出力結果を`.dest`フォルダに分離して尚且つ`.dest`は`.gitignore`に追加した。
+- typingsを使う代わりに@typesリポジトリを使うようにした。
 - lite-serverの起動時に`config/browsersync.json`を読み込むようにした。
