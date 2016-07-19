@@ -12,7 +12,7 @@ System.config({
     'rxjs/Rx': 'node_modules/rxjs/bundles/Rx.umd.js',
   },
   packages: {
-    'app': { main: 'main', loader: 'plugin-babel' }, 
+    'app': { main: 'main' }, 
     '@angular/core': { main: '/bundles/core.umd' },
     '@angular/common': { main: '/bundles/common.umd' },
     '@angular/compiler': { main: '/bundles/compiler.umd' },
