@@ -7,7 +7,11 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "removeComments": false,
-    "noImplicitAny": false,
-    "outDir": ".dest"
+    "noImplicitAny": false,    
+    "outDir": ".dest",
+    "lib": [
+      "es2015",
+      "dom"
+    ]
   }
 }

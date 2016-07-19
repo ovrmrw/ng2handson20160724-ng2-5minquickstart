@@ -7,7 +7,6 @@
     "experimentalDecorators": true,
     "removeComments": false,
     "noImplicitAny": false,
-    "skipLibCheck": true,
     "outDir": ".dest"
   }
 }
