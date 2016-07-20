@@ -34,3 +34,9 @@ $ npm start
 ```
 $ npm run asyncawait
 ```
+
+---
+
+補足
+
+- babel-cliの`babel`コマンドは`--minified`をオプションとして与えると変換後のファイルはminifyされる。
