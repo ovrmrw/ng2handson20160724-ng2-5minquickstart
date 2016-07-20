@@ -39,4 +39,5 @@ $ npm run asyncawait
 
 補足
 
-- babel-cliの`babel`コマンドは`--minified`をオプションとして与えると変換後のファイルはminifyされる。
+- babel-cliの`babel`コマンドは`--minified`をオプションとして与えると変換後のファイルはminifyされる。(大して圧縮されないけど…)
+- Angular2向けSystem.configの書き方の定石はこれ→[ovrmrw/systemjs.config.js](https://gist.github.com/ovrmrw/39d0abca0ebe03ab3c7d8c8d381bb6c0)
