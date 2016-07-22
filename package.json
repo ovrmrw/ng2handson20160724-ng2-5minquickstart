@@ -4,12 +4,13 @@
   "description": "Angular2ハンズオン(2016年7月24日)向けの公式\"5 min quickstart\"ちょいアレンジ版",
   "main": "index.js",
   "scripts": {
+    "clean": "node build/copy-files.js",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "babel": "babel .dest-pre --out-dir .dest --presets es2015 --source-maps",
     "babel:w": "babel .dest-pre --out-dir .dest --presets es2015 --source-maps -w",
-    "start": "npm run tsc && concurrently -k \"npm run tsc:w\" \"npm run lite\" ",
-    "asyncawait": "npm run tsc && npm run babel && concurrently -k \"npm run tsc:w\" \"npm run babel:w\" \"npm run lite\" ",
+    "start": "npm run clean && npm run tsc && concurrently -k \"npm run tsc:w\" \"npm run lite\" ",
+    "asyncawait": "npm run clean && npm run tsc && npm run babel && concurrently -k \"npm run tsc:w\" \"npm run babel:w\" \"npm run lite\" ",
     "lite": "lite-server --config config/browsersync.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -41,6 +42,7 @@
     "babel-cli": "^6.10.1",
     "babel-preset-es2015": "^6.9.0",
     "concurrently": "^2.2.0",
+    "fs-extra": "^0.30.0",
     "lite-server": "^2.2.2",
     "typescript": "^2.0.0"
   }
