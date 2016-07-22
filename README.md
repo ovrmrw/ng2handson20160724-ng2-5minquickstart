@@ -1,7 +1,9 @@
 # ng2handson20160724-ng2-5minquickstart
-Angular2ハンズオン(2016年7月24日)向けの公式"5 min quickstart"ちょいアレンジ版
+Angular2公式"5 Min Quickstart"ちょいアレンジ版
 
 ---
+
+[Original Tutorial](https://angular.io/docs/ts/latest/quickstart.html)
 
 ### Editor
 Visual Studio Code ver.1.3.1
