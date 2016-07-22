@@ -5,6 +5,8 @@ Angular2公式"5 Min Quickstart"ちょいアレンジ版
 
 [Original Tutorial](https://angular.io/docs/ts/latest/quickstart.html)
 
+Angular2 rc.4対応
+
 ### Editor
 Visual Studio Code ver.1.3.1
 
