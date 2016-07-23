@@ -36,7 +36,7 @@ $ npm start
 ### Run with async/await
 まず`forAsyncAwait/tsconfig.json`をルートにコピーしてそれから
 ```
-$ npm run asyncawait
+$ npm run tsbabel
 ```
 
 ---
