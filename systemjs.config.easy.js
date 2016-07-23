@@ -1,6 +1,4 @@
 System.config({
-  baseURL: '/',
-  defaultJSExtensions: true, // 拡張子.jsをdefaultとする。
   transpiler: false,
   map: {
     'app': '.dest', // System.import('app') と書いたら.destフォルダを参照する。
@@ -10,7 +8,7 @@ System.config({
     'rxjs/Rx': 'node_modules/rxjs/bundles/Rx.umd.js', // (このチュートリアルでは使われないが定義しておくと便利)
   },
   packages: {
-    'app': { main: 'main' }, // defaultJSExtensionsをtrueにしていない場合は、{ main: 'main.js' }と書く必要がある。 
+    'app': { main: 'main' }, 
     '@angular/core': { main: '/bundles/core.umd' },
     '@angular/common': { main: '/bundles/common.umd' },
     '@angular/compiler': { main: '/bundles/compiler.umd' },
